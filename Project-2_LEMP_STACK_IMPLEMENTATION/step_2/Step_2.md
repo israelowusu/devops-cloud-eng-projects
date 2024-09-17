@@ -1,4 +1,3 @@
-```markdown
 # MySQL Installation and Configuration on Ubuntu 24.04
 
 ## Steps
