@@ -1,4 +1,4 @@
-```markdown
+
 # Step 1 - Nginx Web Server Setup on Ubuntu 24.04
 
 This tutorial provides step-by-step instructions to install and configure the **Nginx** web server on an **Ubuntu 24.04** server. The instructions include installing Nginx, verifying the installation, and allowing external access via TCP port 80.
