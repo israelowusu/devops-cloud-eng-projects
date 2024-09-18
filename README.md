@@ -22,7 +22,7 @@ This project sets up a LAMP stack on an AWS EC2 instance running Ubuntu Server.
 
 ---
 
-## Project-1: LEMP Stack Setup (Linux, Nginx, MySQL, PHP)
+## Project-2: LEMP Stack Setup (Linux, Nginx, MySQL, PHP)
 
 This project sets up a LEMP stack on an AWS EC2 instance running Ubuntu Server.
 
