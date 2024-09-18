@@ -1,23 +1,45 @@
-# README.md
+# DevOps/Cloud Engineering Projects
 
-## Project-1_LAMP_STACK_IMPLEMENTATION Summary
+## Project-1: LAMP Stack Setup (Linux, Apache, MySQL, PHP)
 
-This project sets up a LAMP stack (Linux, Apache, MySQL, PHP) on an AWS EC2 instance running Ubuntu Server. 
+This project sets up a LAMP stack on an AWS EC2 instance running Ubuntu Server.
 
-1. **Setup Apache**: Begin by installing Apache, which will serve as the web server. Ensure Apache is running and verify its status.
+1. **Setup Apache**: Install and configure Apache as the web server. Verify Apache is running and accessible.
+   
+2. **Configure Security**: Adjust AWS security group settings to allow HTTP traffic on port 80.
+   
+3. **Install MySQL**: Install MySQL to manage data. Secure the installation with a root password and security script.
+   
+4. **Install PHP**: Install PHP with necessary modules for Apache. Confirm PHP functionality.
+   
+5. **Configure Apache Virtual Host**: Set up a directory for your site and configure a virtual host for domain management.
+   
+6. **Test Web Server**: Create an HTML file to verify the virtual host setup. Access the site using the server’s public IP.
 
-2. **Configure Security**: Adjust the AWS security group settings to allow incoming traffic on port 80, which is necessary for HTTP communication.
+7. **Enable PHP Processing**: Modify Apache to prioritize PHP files and create a PHP info page to test functionality.
+   
+8. **Secure PHP Info**: Remove the PHP info page after confirming PHP functionality to avoid exposing sensitive server details.
 
-3. **Install MySQL**: Install MySQL to manage and store your data. Run the included security script to set up a root password and secure the installation.
+---
 
-4. **Install PHP**: Install PHP along with the necessary modules to enable PHP support in Apache. Confirm that PHP is working by checking its version.
+## Project-1: LEMP Stack Setup (Linux, Nginx, MySQL, PHP)
 
-5. **Configure Apache Virtual Host**: Create a new directory for your site and set up a virtual host configuration file to manage your domain or project directory. Enable this new site configuration and disable the default Apache site.
+This project sets up a LEMP stack on an AWS EC2 instance running Ubuntu Server.
 
-6. **Test Web Server**: Create a basic HTML file to verify that the virtual host is correctly serving content. Access your site via the public IP address to check its functionality.
+1. **Setup Nginx**: Install and configure Nginx as the web server. Ensure Nginx is running and accessible via the public IP.
+   
+2. **Configure Security**: Modify AWS security groups to allow HTTP traffic on port 80 for Nginx.
+   
+3. **Install MySQL**: Install MySQL for data management. Secure it with a root password and user account configuration.
+   
+4. **Install PHP**: Install PHP with `php-fpm` to work with Nginx and necessary modules for MySQL communication.
+   
+5. **Configure Nginx Server Block**: Set up a directory structure for your website and create a server block to manage the domain.
+   
+6. **Test Web Server**: Create an HTML file to verify the server block configuration and test site access.
+   
+7. **Enable PHP Processing**: Configure Nginx to process PHP files using `php-fpm`. Create a PHP info page to confirm PHP processing.
+   
+8. **Connect PHP to MySQL**: Create a sample database and PHP script to retrieve data from MySQL and display it on the webpage.
 
-7. **Enable PHP Processing**: Modify Apache’s configuration to prioritize PHP files over HTML files. Create a PHP info page to confirm that PHP is properly processing requests.
-
-8. **Secure PHP Info**: Remove the PHP info page once you’ve confirmed that PHP is operational, as it can expose sensitive server information.
-
-This setup ensures that you have a fully functional LAMP stack ready for developing and hosting web applications.
+This setup ensures a fully functional LEMP stack, ready for deploying PHP-based web applications.
